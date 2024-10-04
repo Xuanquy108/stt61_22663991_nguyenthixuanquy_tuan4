@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container{
+            padding-top: 20px;
+            width:780px;
+            height:auto;
+            border:1px solid rgb(0, 166, 255);
+            padding-bottom:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="validationDefault01" class="form-label">Username*</label>
+          <input type="text" class="form-control" id="validationDefault01" value="Choose your usename" required>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault02" class="form-label">Company name*</label>
+          <input type="text" class="form-control" id="validationDefault02" value="Your company name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">E-mail*</label>
+          <input type="text" class="form-control" id="validationDefault03" value="Your current email address" required>
+        </div>
+        <div class="col-md-6">
+            <label for="validationDefault02" class="form-label">Category*</label>
+            <input type="text" class="form-control" id="validationDefault02" value="Skill category" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">Password*</label>
+            <input type="text" class="form-control" id="validationDefault01" value="Create a password" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault02" class="form-label">Contact number*</label>
+            <input type="text" class="form-control" id="validationDefault02" value="provide your number" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">Fullname*</label>
+            <input type="text" class="form-control" id="validationDefault01" value="Your firs name and last name" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault02" class="form-label">Your location*</label>
+            <input type="text" class="form-control" id="validationDefault02" value="Your pincode and City" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault02" class="form-label">Gender*</label><br>
+            <input type="radio" value="HTML">
+         <label for="html">Male</label>
+         <input type="radio" value="CSS">
+         <label for="css">Female</label><br>
+        </div>
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6">
+            <button type="button" class="btn btn-success">Signup</button> or
+            <button class="btn btn-primary" type="submit">Sign Up with Facebook</button>            
+        </div>
+    </div>
+      </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

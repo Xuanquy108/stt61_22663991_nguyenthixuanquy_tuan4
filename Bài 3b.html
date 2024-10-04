@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Modal kết hợp Carousel</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .modal-header .nav-link {
+      color: rgb(112, 111, 111);
+      font-weight: bold;
+    }
+
+    .modal-header .nav-link.active {
+      color: #ff6600; /* Orange color */
+    }
+
+    .btn-orange {
+      background-color: #ff6600;
+      color: white;
+    }
+
+    .captcha {
+      font-size: 20px;
+      letter-spacing: 5px;
+    }
+
+    .policy-text {
+      font-size: 0.9rem;
+      color: gray;
+    }
+
+    .policy-text a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+
+    .forgot-password {
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .forgot-password a {
+      color: #636363;     
+     }
+  </style>
+</head>
+<body>
+
+<!-- Modal kết hợp Carousel -->
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <ul class="nav nav-tabs" id="authTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">ĐĂNG NHẬP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">ĐĂNG KÝ</a>
+        </li>
+      </ul>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="tab-content" id="authTabContent">
+        <!--Form Đăng nhập-->
+        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+          <p>Vui lòng đăng nhập trước khi mua vé để tích lũy điểm, cơ hội nhận thêm nhiều ưu đãi từ chương trình thành viên Galaxy Cinema </p>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Mật khẩu" required>
+            </div>
+            <div class="form-group forgot-password">
+              <a href="#">Quên Mật Khẩu?</a>
+            </div>
+            <button type="submit" class="btn btn-orange btn-block">ĐĂNG NHẬP</button>
+          </form>
+        </div>
+
+        <!--Form đăng ký-->
+        <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Họ tên" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="tel" class="form-control" placeholder="Số điện thoại" required>
+              </div>
+              <div class="form-group col-md-6">
+                <select class="form-control" required>
+                  <option selected>Chọn giới tính</option>
+                  <option value="male">Nam</option>
+                  <option value="female">Nữ</option>
+                  <option value="other">Khác</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="password" class="form-control" placeholder="Mật khẩu" required>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="password" class="form-control" placeholder="Xác nhận mật khẩu" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <select class="form-control" required>
+                  <option selected>Chọn thành phố</option>
+                  <option value="city1">Hà Nội</option>
+                  <option value="city2">Hồ Chí Minh</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <select class="form-control" required>
+                  <option selected>Quận</option>
+                  <option value="district1">Quận 1</option>
+                  <option value="district2">Quận 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Địa chỉ" required>
+            </div>
+            <div class="form-group">
+              <input type="date" class="form-control" placeholder="Chọn ngày (dd/mm/yyyy)" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <span class="captcha">352176</span>
+                <button class="btn btn-link" type="button">
+                  <i class="fas fa-sync-alt"></i>
+                </button>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Nhập mã captcha" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <small class="policy-text">Tôi đã đọc và đồng ý với <a href="#">CHÍNH SÁCH</a> của chương trình.</small>
+            </div>
+            <button type="submit" class="btn btn-orange btn-block">ĐĂNG KÝ</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

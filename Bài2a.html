@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container mt-5{
+            width:60px;
+            height:auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <table class="table">
+               <th>Check out</th>                
+                    <tbody>
+                        <tr>
+                            <td><strong>Product 1</strong><br>Lorem ipsum dolor sit amet</td>
+                            <td class="text-right"><strong>$200</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Product 2</strong><br>Lorem ipsum dolor sit amet</td>
+                            <td class="text-right"><strong>$120</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td class="text-right"><strong>$320</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h5 class="card-title ">Credit Card Details</h5>
+                    <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-7 mr-3">
+                            <label for="cardHolder">Card Holder</label>
+                            <input type="text" class="form-control" id="cardHolder" placeholder="Card Holder" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="expMonth">Expiration Date</label>
+                            <input type="text" class="form-control" id="expMonth" placeholder="MM / YY" required>
+                        </div>
+                    </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-9 mr-3">
+                                <label for="cardNumber">CARD NUMBER</label>
+                                <input type="text" class="form-control" id="cardNumber" placeholder="Card Number" required>
+                            </div>                           
+                            <div class="form-group col-md-2">
+                                <label for="cvc">CVC</label>
+                                <input type="text" class="form-control" id="cvc" placeholder="CVC" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mt-3">Proceed</button>
+                    </form>
+            </div>
+        </div>
+    </div>          
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
